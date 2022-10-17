@@ -1,0 +1,111 @@
+/*Header*/
+
+.header {
+  position: relative;
+
+  &__wrapper {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+    height: 900px;
+  }
+
+  &__inner {
+    padding-top: 30px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__adress,
+  &__phone {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  &__nav {
+    margin-bottom: 20px;
+
+    .nav {
+      @media only screen and (max-width: 767px) {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: block;
+        padding: 20px;
+        background-color: #db3138;
+        text-align: center;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      border: 0;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  &__item {
+    border-right: 1px solid #ffffff;
+    padding: 13px 5px;
+
+    @media only screen and (max-width: 767px) {
+      border-right: 0;
+    }
+
+    @media only screen and (max-width: 585px) {
+      border-right: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+// /*Intro*/
+
+.intro {
+  &__btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 566px;
+    
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    margin-right: 30px;
+
+    @media only screen and (max-width: 767px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
